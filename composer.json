@@ -1,0 +1,42 @@
+{
+    "name": "warith/laravel-fcm-httpv1",
+    "description": "A Laravel package to send Firebase Cloud Messaging (FCM) notifications across Laravel applications.",
+    "type": "library",
+    "keywords": ["laravel", "fcm", "firebase", "notification", "push"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WaRiTh313",
+            "homepage": "https://github.com/warith313",
+            "role": "Full Stack Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.4|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Warith\\Fcm\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Warith\\Fcm\\FcmServiceProvider"
+            ],
+            "aliases": {
+                "Fcm": "Warith\\Fcm\\FcmFacade"
+            }
+        }
+    },
+    "support": {
+        "issues": "https://github.com/warith313/laravel-fcm-httpv1/issues",
+        "source": "https://github.com/warith313/laravel-fcm-httpv1"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
